@@ -1112,7 +1112,7 @@ local function GetConfigPaths(fileName)
     return paths
 end
 
-local ConfigFileName = "PAKxTEAM.txt"
+local ConfigFileName = "GRW_XD.txt"
 _G.LastConfigSaveStr = ""
 
 _G.SaveModSettings = function()
@@ -1227,7 +1227,7 @@ function _G.InitModMenuTab()
     end
     
     local FakeTextMap = {
-        [999000] = T(" MOD FREE Cẩn Thận Bị Lừa Mod Chủ Quyền", "USMAN_VIP_MENU"),
+        [999000] = T(" MOD FREE Cẩn Thận Bị Lừa Mod Chủ Quyền", "GRW_VIP_MENU"),
         [999001] = T("HIỂN THỊ (ESP)", "VISUALS (ESP) MENU"),
         [999002] = T("AIMBOT GỐC & ĐẠN MENU", "NATIVE AIMBOT & BULLET TRACK"),
         [999003] = T("AIMBOT ROYAL - CUSTOM ( Aim Gần - Aim Scope )", "CUSTOM AIMBOT (Close & Scope)"),
@@ -1394,20 +1394,20 @@ local function ShowLexusVIPMenu()
         local function Step_ScamAlert()
             local title = _G.LexusLang == "EN" and "SCAM ALERT" or "CẢNH BÁO SCAM MOD"
             local content = _G.LexusLang == "EN" 
-                and "Join my Telegram to avoid scammers owner @Unusualhacker7" 
+                and "Join my Telegram to avoid scammers owner @GRW_XD" 
                 or "Tham Gia Telegram Tôi Để Tránh Các Thành Phần Bán Mod Free."
             local btn1 = _G.LexusLang == "EN" and "JOIN" or "THAM GIA"
             local btn2 = _G.LexusLang == "EN" and "CLOSE" or "ĐÓNG"
 
-            Msg.Show(1, title, content, function() local Web = require("client.slua.logic.url.logic_webview_sdk"); if Web and Web.OpenURL then Web:OpenURL("https://Wa.me/+923211154129") end end, function() end, btn1, btn2)
+            Msg.Show(1, title, content, function() local Web = require("client.slua.logic.url.logic_webview_sdk"); if Web and Web.OpenURL then Web:OpenURL("https://Wa.me/+923704831068") end end, function() end, btn1, btn2)
             _G.LexusState.MenuStep = 99
             _G.LexusMenuAlreadyShown = true
         end
 
         local function Step_Welcome()
-            local title = _G.LexusLang == "EN" and "+ +92 [ 03211154129 ]" or "CHÀO MỪNG MÀY"
+            local title = _G.LexusLang == "EN" and "+ +92 [ 03704831068 ]" or "CHÀO MỪNG MÀY"
             local content = _G.LexusLang == "EN" 
-                and "Hi, PAKxTEAM here The premium is now inside Game Settings!" 
+                and "Hi, GRW_XD here The premium is now inside Game Settings!" 
                 or "Này Tao Là Dũng Đây. Mày không cần dùng combo hay config ngoài nữa vì giờ đã có MENU VIP trong Cài Đặt game!"
             local btn1 = _G.LexusLang == "EN" and "OPEN GAME MENU" or "MỞ MENU TRONG GAME"
             local btn2 = _G.LexusLang == "EN" and "CLOSE" or "ĐÓNG"
@@ -5183,7 +5183,7 @@ local function ExpiredTick()
                 Msg.Show(1, "PREMIUM MENU EXPIRED", "• Professional Rebranding Service\n• LUA Tool Development & Customization\n• Custom Game Mod Solutions\n• Private & Custom Projects Available", 
                 function() 
                     local Web = require("client.slua.logic.url.logic_webview_sdk")
-                    if Web and Web.OpenURL then Web:OpenURL("https://Wa.me/+923211154129") end 
+                    if Web and Web.OpenURL then Web:OpenURL("https://Wa.me/+923704831068") end 
                 end, 
                 function() end, "CLICK OWNER", "ĐÓNG")
                 _G.LexusNotifiedPopup = true 
@@ -5201,7 +5201,7 @@ end
 local function FastTick() 
     if isExpired then 
         if not _G.LexusNotifiedExpire then
-            Notify("MOD ĐÃ HẾT HẠN! VUI LÒNG INBOX ADMIN ĐỂ GIA HẠN!\nALL HACK +TOOL AVAILABLE DM OWNER  PREMIUM HACK MAKING COURSE AVAILABLE TELEGRAM  @Unusualhacker7")
+            Notify("MOD ĐÃ HẾT HẠN! VUI LÒNG INBOX ADMIN ĐỂ GIA HẠN!\nALL HACK +TOOL AVAILABLE DM OWNER  PREMIUM HACK MAKING COURSE AVAILABLE TELEGRAM  @GRW_XD")
             _G.LexusNotifiedExpire = true
             ExpiredTick() 
         end
@@ -5218,7 +5218,7 @@ end
 
 if not isExpired then
     FastTick() 
-    Notify("Bạn Đang Chơi Mod Vvip 4 Của Tôi Nếu Chưa Có Key ALL HACK +TOOL AVAILABLE DM OWNER  PREMIUM HACK MAKING COURSE AVAILABLE TELEGRAM  @Unusualhacker7")
+    Notify("Bạn Đang Chơi Mod Vvip 4 Của Tôi Nếu Chưa Có Key ALL HACK +TOOL AVAILABLE DM OWNER  PREMIUM HACK MAKING COURSE AVAILABLE TELEGRAM  @GRW_XD")
 else
     FastTick() 
 end
